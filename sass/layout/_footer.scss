@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+  display: flex;
+  align-items: baseline;
+}
+
+.address-footer__logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--extra-color);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.contacts-list__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--extra-color);
+}
+
+.contacts-list__item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+}
+
+.contacts-list__info:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.container__footer {
+  display: flex;
+  align-items: baseline;
+}

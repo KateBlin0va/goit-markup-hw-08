@@ -1,0 +1,24 @@
+//BASE
+@import './base/reset';
+@import './base/common';
+
+//COMPONENTS
+@import './components/container';
+@import './components/modal';
+@import './components/btn';
+
+//LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/footer-socials.scss';
+@import './layout/footer-subscribe.scss';
+@import './layout/portfolio';
+@import './layout/works';
+
+//UTILS
+@import './utils/vars';
