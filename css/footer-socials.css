@@ -1,5 +1,23 @@
 .footer-socials {
-  margin-left: 70px;
+  display: block;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-socials {
+    margin-bottom: 102px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-socials {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-right: 93px;
+  }
 }
 
 .footer-socials__tittle {
@@ -17,8 +35,7 @@
 
 .socials-list {
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
 }
 
 .socials-list__item + .socials-list__item {
@@ -45,5 +62,11 @@
 
 .socials-list__icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container__footer > *:not(:last-child) {
+    width: calc(100% / 2);
+  }
 }
 /*# sourceMappingURL=footer-socials.css.map */

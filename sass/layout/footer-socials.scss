@@ -1,5 +1,15 @@
 .footer-socials {
-  margin-left: 70px;
+  display: block;
+  // margin-left: 70px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 102px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer-socials__tittle {
@@ -17,8 +27,8 @@
 
 .socials-list {
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
+  // align-items: center;
 }
 
 .socials-list__item {
@@ -48,4 +58,10 @@
 
 .socials-list__icon {
   fill: currentColor;
+}
+
+.container__footer > *:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc(100% / 2);
+  }
 }

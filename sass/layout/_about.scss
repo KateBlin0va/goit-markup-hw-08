@@ -1,5 +1,8 @@
 .about {
-  padding-bottom: 94px;
+  @media (max-width: 1199px) {
+    display: none;
+  }
+  padding-bottom: 60px;
 }
 
 .about__title {
