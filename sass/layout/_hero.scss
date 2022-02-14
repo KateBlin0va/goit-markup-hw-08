@@ -1,4 +1,4 @@
-.hero {
+.hero__container {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -10,11 +10,6 @@
     width: 100%;
     min-height: 600px;
   }
-}
-
-.hero__container {
-  // padding-top: 221px;
-  // padding-bottom: 179px;
   min-height: 400px;
   min-width: 320px;
   padding: 118px 60px;
@@ -23,11 +18,14 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Hero_mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -36,7 +34,7 @@
       url(../images/hero_mob_2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
   @media screen and (max-width: 479px) {
     padding-right: 50px;
@@ -73,15 +71,6 @@
     background-size: cover;
   }
 }
-
-// @media screen and (min-width: 768px) {
-//     width: 768px;
-//     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url(../images/hero_tab_1x.jpg);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//   }
 
 .hero__title {
   font-weight: 900;
