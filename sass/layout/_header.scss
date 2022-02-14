@@ -101,6 +101,9 @@
 }
 
 .connect-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -157,20 +160,11 @@
 .connect__mail {
   display: flex;
   align-items: center;
-  // margin-right: 50px;
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  // }
 }
 
 .connect__tel {
   display: flex;
   align-items: center;
-  //   @media screen and (min-width: 1200px){
-  //     padding-top: 32px;
-  //     padding-bottom: 32px;
-  // }
 }
 
 .connect__icon {

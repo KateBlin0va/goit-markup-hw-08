@@ -394,6 +394,12 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .connect-list {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .connect-list {
     display: flex;
