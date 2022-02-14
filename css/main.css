@@ -395,6 +395,12 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .connect-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .site-list {
     display: flex;
   }
@@ -421,8 +427,10 @@ body {
   }
 }
 
-.conect-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 1199px) {
+  .connect__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .connect__tel,
@@ -431,24 +439,22 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
-  padding-top: 32px;
   color: var(--text-color);
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.connect__mail {
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
-}
-
 @media screen and (min-width: 1200px) {
+  .connect__tel,
   .connect__mail {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+}
+
+.connect__mail {
+  display: flex;
+  align-items: center;
 }
 
 .connect__tel {

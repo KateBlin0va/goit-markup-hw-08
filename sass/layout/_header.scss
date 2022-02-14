@@ -100,6 +100,12 @@
   display: flex;
 }
 
+.connect-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .site-list {
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -124,8 +130,11 @@
   }
 }
 
-.conect-item:not(:last-child) {
-  margin-right: 50px;
+.connect__item:not(:last-child) {
+  // margin-right: calc(15px * 2);
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .connect__tel,
@@ -134,26 +143,34 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  // padding-bottom: 32px;
+  // padding-top: 32px;
   color: var(--text-color);
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.connect__mail {
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 }
 
+.connect__mail {
+  display: flex;
+  align-items: center;
+  // margin-right: 50px;
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  // }
+}
+
 .connect__tel {
   display: flex;
   align-items: center;
+  //   @media screen and (min-width: 1200px){
+  //     padding-top: 32px;
+  //     padding-bottom: 32px;
+  // }
 }
 
 .connect__icon {
